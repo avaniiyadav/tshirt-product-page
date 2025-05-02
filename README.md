@@ -12,7 +12,7 @@ A responsive, modern product listing page with:
 ## Tech Stack
 
 - HTML5 + CSS3
-- JavaScript (Vanilla)
+- JavaScript 
 - Responsive Design
 
 ## How to Run
