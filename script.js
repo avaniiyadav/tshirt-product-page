@@ -106,3 +106,23 @@ tshirtImg.addEventListener('click', () => {
     tshirtImg.classList.remove('clicked');
   }, 300);
 });
+
+const menuToggle = document.getElementById("menu-toggle");
+const sideMenu = document.getElementById("side-menu");
+const closeBtn = document.getElementById("close-btn");
+const overlay = document.getElementById("overlay");
+
+menuToggle.addEventListener("click", () => {
+  sideMenu.classList.add("active");
+  overlay.style.display = "block";
+});
+
+closeBtn.addEventListener("click", () => {
+  sideMenu.classList.remove("active");
+  overlay.style.display = "none";
+});
+
+overlay.addEventListener("click", () => {
+  sideMenu.classList.remove("active");
+  overlay.style.display = "none";
+});

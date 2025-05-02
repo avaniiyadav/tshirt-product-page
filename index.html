@@ -14,24 +14,43 @@
 <body>
   <!-- ===================== Header Section ===================== -->
   <header class="navbar">
-    <!-- Website Logo -->
-    <div class="logo">Banana <span>Threads</span></div>
+    <div class="navbar-container">
+      <a href="#" class="logo"><span class="black">Banana</span><span class="yellow">Threads</span></a>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Catalog</a>
+        <a href="#">Contact</a>
+        <div class="icons">
+          <button><i class="fas fa-search"></i></button>
+          <button><i class="fas fa-user"></i></button>
+          <button><i class="fas fa-shopping-bag"></i></button>
+        </div>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
 
-    <!-- Navigation Links -->
-    <nav>
+  <!-- Backdrop -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Off-canvas Menu -->
+  <aside class="side-menu" id="side-menu">
+    <div class="side-header">
+      <button class="close-btn" id="close-btn"><i class="fas fa-times"></i></button>
+    </div>
+    
+    <nav class="side-nav">
       <a href="#">Home</a>
       <a href="#">Catalog</a>
       <a href="#">Contact</a>
+      <div class="icons">
+        <button><i class="fas fa-search"></i></button>
+        <button><i class="fas fa-user"></i></button>
+        <button><i class="fas fa-shopping-bag"></i></button>
+      </div>
     </nav>
-
-    <!-- Navigation Icons: Search, User, Bag -->
-    <div class="nav-icons">
-      <i class="fas fa-search"></i>
-      <i class="fas fa-user"></i>
-      <i class="fas fa-bag-shopping"></i>
-    </div>     
-  </header>
-
+  </aside>
+  
   <!-- ===================== Main Product Section ===================== -->
   <main class="product-section">
     <!-- Left Side: Product Description and Controls -->
