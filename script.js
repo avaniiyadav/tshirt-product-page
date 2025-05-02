@@ -114,15 +114,15 @@ const overlay = document.getElementById("overlay");
 
 menuToggle.addEventListener("click", () => {
   sideMenu.classList.add("active");
-  overlay.style.display = "block";
+  overlay.classList.add("active");
 });
 
 closeBtn.addEventListener("click", () => {
   sideMenu.classList.remove("active");
-  overlay.style.display = "none";
+  overlay.classList.remove("active");
 });
 
 overlay.addEventListener("click", () => {
   sideMenu.classList.remove("active");
-  overlay.style.display = "none";
+  overlay.classList.remove("active");
 });

@@ -15,18 +15,27 @@
   <!-- ===================== Header Section ===================== -->
   <header class="navbar">
     <div class="navbar-container">
-      <a href="#" class="logo"><span class="black">Banana</span><span class="yellow">Threads</span></a>
+      <!-- Left: Menu and Logo -->
+      <div class="left-section">
+        <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+        <a href="#" class="logo">
+          <span class="black">Banana</span><span class="yellow">Threads</span>
+        </a>
+      </div>
+  
+      <!-- Center: Navigation (hidden on mobile) -->
       <nav class="nav-links">
         <a href="#">Home</a>
         <a href="#">Catalog</a>
         <a href="#">Contact</a>
-        <div class="icons">
-          <button><i class="fas fa-search"></i></button>
-          <button><i class="fas fa-user"></i></button>
-          <button><i class="fas fa-shopping-bag"></i></button>
-        </div>
       </nav>
-      <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+  
+      <!-- Right: Always visible icons -->
+      <div class="right-icons">
+        <button><i class="fas fa-search"></i></button>
+        <button><i class="fas fa-user"></i></button>
+        <button><i class="fas fa-shopping-bag"></i></button>
+      </div>
     </div>
   </header>
 
@@ -43,11 +52,6 @@
       <a href="#">Home</a>
       <a href="#">Catalog</a>
       <a href="#">Contact</a>
-      <div class="icons">
-        <button><i class="fas fa-search"></i></button>
-        <button><i class="fas fa-user"></i></button>
-        <button><i class="fas fa-shopping-bag"></i></button>
-      </div>
     </nav>
   </aside>
   
